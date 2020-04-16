@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Be SAFE</string>
+    <string name="home">HOME</string>
+    <string name="title_home">Home</string>
+    <string name="BeSAFE" />
+    <string name="enter_your_mobile_number" />
+    <string name="verify" />
+    <string name="enter_otp" />
+    <string name="login" />
+    <string name="besafe">BeSAFE</string>
+</resources>
