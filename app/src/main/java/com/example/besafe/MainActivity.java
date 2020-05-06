@@ -7,8 +7,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.homeFragment;
 import com.infoFragment;
 import com.profileFragment;
 
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,
-                    new HomeFragment()).commit();
+                    new profileFragment()).commit();
         }
 
     }
@@ -34,25 +34,23 @@ public class MainActivity extends AppCompatActivity {
             Fragment selectedfragment = null;
 
             switch (item.getItemId()) {
+                case R.id.nav_profile:
+                    selectedfragment = new profileFragment();
+                    break;
                 case R.id.nav_home:
-                    selectedfragment = new HomeFragment();
+                    selectedfragment = new homeFragment();
                     break;
                 case R.id.nav_info:
                     selectedfragment = new infoFragment();
-                    break;
-                case R.id.nav_profile:
-                    selectedfragment = new profileFragment();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,
                     selectedfragment).commit();
             return true;
 
-
         }
 
+
+
     } ;
-    }
-
-
-
+}

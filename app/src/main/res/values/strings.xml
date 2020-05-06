@@ -2,10 +2,19 @@
     <string name="app_name">Be SAFE</string>
     <string name="home">HOME</string>
     <string name="title_home">Home</string>
-    <string name="BeSAFE" />
+    <string name="BeSAFE" translatable="false" />
     <string name="enter_your_mobile_number" />
     <string name="verify" />
     <string name="enter_otp" />
     <string name="login" />
     <string name="besafe">BeSAFE</string>
+    <string name="back" />
+    <string name="contacts_intro" />
+    <string name="add_contact" />
+    <string name="show_contact" />
+    <string name="contacts_string" />
+    <string name="contacts_empty" />
+    <string name="remove" />
+    <string name="empty_state_of_recycler_view" />
+
 </resources>
